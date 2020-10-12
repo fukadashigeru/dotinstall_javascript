@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Practice</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="target"></div>
+
+  <script>
+    'user strict';
+
+    document.getElementById('target').addEventListener('dblclick', () => {
+      document.getElementById('target').style.background = 'pink';
+      document.getElementById('target').style.borderRadius = '50%';
+    });
+  </script>
+</body>
+</html>
+    
+
