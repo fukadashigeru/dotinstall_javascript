@@ -8,11 +8,21 @@
 //   });
 // }
 
+// {
+//   console.log('#08 classListを使ってみよう');
+
+//   document.querySelector('button').addEventListener('click', () => {
+//     const targetNode = document.getElementById('target');
+//     targetNode.classList.toggle('my-color');
+//   })
+// }
+
 {
-  console.log('#08 classListを使ってみよう');
+  console.log('#09 カスタムデータ属性を扱ってみよう');
 
   document.querySelector('button').addEventListener('click', () => {
     const targetNode = document.getElementById('target');
-    targetNode.classList.toggle('my-color');
+
+    targetNode.textContent = targetNode.dataset.translation;
   })
 }
